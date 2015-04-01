@@ -1,6 +1,7 @@
 __author__ = 'Administrator'
 '''
     set集合, 唯一性
+    类似java set集合
 '''
 
 s = {1, 2, 3, 4, 4}

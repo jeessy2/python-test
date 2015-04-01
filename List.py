@@ -1,6 +1,9 @@
 __author__ = 'Administrator'
 '''
     List列表
+
+    类似java list集合
+
 '''
 MyList1 = ['b', 1, 2]
 
