@@ -22,3 +22,7 @@ print(a & b)
 print(a | b)
 # a和b中不同时存在的元素
 print(a ^ b)
+
+# for
+Y = {x ** 2 for x in [1, 2, 3, 4]}
+print(Y)
