@@ -1,3 +1,4 @@
-__author__ = 'Administrator'
 import m
+
+__author__ = 'Administrator'
 print(m.add(1, 1))

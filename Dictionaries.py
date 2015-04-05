@@ -11,7 +11,7 @@ __author__ = 'Administrator'
 '''
 
 a = {}
-b = {'a': 1, 'b': 2, 'c': 3}
+b = {'a': 1, 'c': 3, 'b': 2}
 
 # 取一个值
 print(b['a'])
@@ -30,6 +30,7 @@ print("排序后的值：", sorted(b.keys()))
 # 返回所有的key
 print("所有的key:", b.keys())
 print("所有的key:", list(b.keys()))
+
 
 # 测试是否有值
 print('b' in b)
