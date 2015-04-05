@@ -5,7 +5,7 @@ __author__ = 'Administrator'
     类似java数组
 """
 
-a = (0, 'a', 2)
+a = (0, 'a', 'a', 2)
 print(a)
 
 # 元组值不能改变。 a[0] = 1
@@ -18,5 +18,7 @@ print(a[1])
 tup1, tup2 = (1, 2, 3), (4, 5, 6)
 print(tup1 + tup2)
 
-
-
+# 通过index查找
+print(a.index(0))
+# 统计a出现的次数
+print(a.count('a'))

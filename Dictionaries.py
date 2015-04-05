@@ -35,3 +35,8 @@ print("所有的key:", list(b.keys()))
 # 测试是否有值
 print('b' in b)
 print('a' not in b)
+if 'qq' not in b:
+    print("qq is not in b!!!")
+
+# 没有，取默认值
+print(b.get('qq', 0))
