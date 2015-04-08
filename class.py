@@ -10,9 +10,9 @@ class Person:
     def lastname(self):
         return self.name.split()[-1]
 
-    def age(self):
-        return self.age
+    def ageyear(self, year):
+        return self.age+year
 
 p = Person("chen jie", 28)
-print(p.age)
+print(p.ageyear(1987))
 print(p.lastname())

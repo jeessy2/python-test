@@ -12,6 +12,27 @@ __author__ = 'Administrator'
 
 a = {}
 b = {'a': 1, 'c': 3, 'b': 2}
+# 创建字典的另外一种方式
+c = dict(name='chenjie', age=12)
+print(c['name'])
+# 创建字典的另外一种方式
+d = {k: v for (k, v) in zip(['a', 'b', 'c'], [1, 2, 3])}
+print(d)
+
+# 迭代
+print("迭代")
+for x in b:
+    print(b[x])
+
+if 'd' in b:
+    print(b['d'])
+else:
+    print("d is 0!")
+
+try:
+    print(b['d'])
+except KeyError:
+    print("KeyError:d is 0")
 
 # 取一个值
 print(b['a'])
@@ -31,7 +52,6 @@ print("排序后的值：", sorted(b.keys()))
 print("所有的key:", b.keys())
 print("所有的key:", list(b.keys()))
 
-
 # 测试是否有值
 print('b' in b)
 print('a' not in b)
@@ -40,3 +60,10 @@ if 'qq' not in b:
 
 # 没有，取默认值
 print(b.get('qq', 0))
+
+# 排序
+K = d.keys()
+Ks = list(K)
+Ks.sort()
+for x in Ks:
+    print(d[x])
