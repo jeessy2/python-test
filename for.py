@@ -21,3 +21,21 @@ q = []
 for x in [1, 2, 3, 4]:
     q.append(x ** 2)
 print(q)
+
+a = [(1, 2), (3, 4), (5, 6)]
+for (x, y) in a:
+    print(x, y)
+
+for x, *y, z in [("a", 'b', 'c', 'd'), ('e', 'f', 'g', 'h')]:
+    print(x, y, z)
+
+# 两个for循环
+item = ["aaa", (1, 2), 'bbb']
+item2 = ['bbb', "aaa"]
+for i1 in item:
+    for i2 in item2:
+        if i1 == i2:
+            print("i found ", i1)
+            break
+    else:
+        print("i cann\'t found!", i1)

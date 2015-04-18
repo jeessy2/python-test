@@ -67,3 +67,8 @@ Ks = list(K)
 Ks.sort()
 for x in Ks:
     print(d[x])
+
+# 字典与字典的比较
+DA = {"a": 1, "b": 2}
+DB = {"a": 1, "b": 3}
+print(sorted(DA.items()) < sorted(DB.items()))
